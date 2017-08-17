@@ -11805,14 +11805,18 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h2><p>The null-hypothesis is that the time it takes to pronounce the color of the ink does not differ between congruent and incongruent setups, while the alternative hypothesis is that it takes more time to call the color when it is incongruent with the meaning of the word.</p>
+<h2 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h2><h4 id="Hypotheses">Hypotheses<a class="anchor-link" href="#Hypotheses">&#182;</a></h4><p>The null-hypothesis is that the mean time it takes to pronounce the color of the ink does not differ between congruent and incongruent setups among all the test subjects, while the alternative hypothesis is that on average it takes more time to call the colors when they are incongruent with the meaning of the written words.</p>
 <p>$H_0: \mu_{cong} = \mu_{incong}$,</p>
 <p>$H_A: \mu_{cong} < \mu_{incong}$,</p>
-<p><em>where $\mu</em>{cong}$: mean time on congruent list, and $\mu<em>{incong}$: mean time on incongruent list.</em></p>
-<p>To test these hypotheses we need to perform a <strong>one-sided t-Test of dependent variables.</strong></p>
+<p><em>where</em></p>
+<p>$\mu_{cong}$: <em>population mean time on congruent list,</em></p>
+<p>$\mu_{incong}$: <em>population mean time on incongruent list.</em></p>
+<h4 id="Test">Test<a class="anchor-link" href="#Test">&#182;</a></h4><p>To test these hypotheses we need to perform a <strong>one-sided t-test of dependent variables.</strong> The reasons for this choice:</p>
 <ol>
+<li>We do not know the parameters (standard deviation) of the population, and we have relatively small (&lt;30) sample.</li>
 <li>The samples are dependent, paired samples, as each subject had to make two entries, one under each condition. This makes this test a 'whithin-subject' test. </li>
 <li>I also formulated the alternative hypothesis as the times under incongruent condition are <em>larger</em> than under the other condition. Therefore we need a one-sided test to be able to reject $H_0$.</li>
+<li>We can assume that the distribution of the dependent variable is sufficiently close to normal (t-test is robust against the normality assumption to a certain extent).</li>
 </ol>
 
 </div>
